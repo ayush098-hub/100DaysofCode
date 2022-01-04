@@ -2,21 +2,31 @@ Question_link: https://practice.geeksforgeeks.org/problems/game-with-nos3123/1/?
 
 #User function Template for python3
 
-def game_with_number (arr,  n) : 
+# def game_with_number (arr,  n) : 
     
-    result=[]
-    last=arr[n-1]
+#     result=[]
+#     last=arr[n-1]
     
-    for i in range(n):
+#     for i in range(n):
        
-        if i==n-1:
-            result.append(last)
-        else:
+#         if i==n-1:
+#             result.append(last)
+#         else:
             
-            xored=arr[i] ^ arr[i+1]
-            result.append(xored)
+#             xored=arr[i] ^ arr[i+1]
+#             result.append(xored)
     
-    return result
+#     return result
+
+or 
+
+    
+    for i in range(n-1):
+            
+            arr[i]=arr[i] ^ arr[i+1]
+            
+    
+    return arr
         
     
     #Complete the function
